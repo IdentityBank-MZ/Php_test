@@ -1,0 +1,19 @@
+params:
+    - env # load params from environment vars
+    - /usr/local/share/p57b/php/business/config/params.php
+    - idbconfig.php
+config:
+    idbconfig:
+        url: '%url%'
+        url_signup: '%url_signup%'
+        binary: '%binary%'
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
